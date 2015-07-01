@@ -6,10 +6,6 @@ if (defined('_SYSTEM_SECURITY_KEY')) {
     if($_GET['seckey'] != _SYSTEM_SECURITY_KEY){
         die('Access denied!');
     }
-}else{
-    if($_GET['tfm_sec'] != TFM_DB_BACKUP_KEY){
-        die('Access denied!');
-    }
 }
 
 if (isset($_GET['create_backup'])){
